@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Products;
 use Auth;
-use Itstructure\GridView\DataProviders\EloquentDataProvider;
+use Woo\GridView\DataProviders\EloquentDataProvider;
   
 class ProductsController extends Controller
 {
@@ -16,10 +16,12 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $products = Products::get();
-  
-        return view("products", compact("products"));
-    }  
+        $dataProvider = new EloquentDataProvider(Products::query());
+        return view('products', [
+            'dataProvider' => $dataProvider
+        ]);
+
+    } 
   
     /**
      * Write code on Method

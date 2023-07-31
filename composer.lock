@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78b56ff7783ef2d97d3173ac6ad48c02",
+    "content-hash": "353f78141b6784180e7f0da4cd8727ad",
     "packages": [
         {
             "name": "brick/math",
@@ -6213,6 +6213,53 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "woo/laravel-grid-view",
+            "version": "2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deniskoronets/Laravel-GridView.git",
+                "reference": "0ff87e093bd2e174b177908aec985a2d7eda7c31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deniskoronets/Laravel-GridView/zipball/0ff87e093bd2e174b177908aec985a2d7eda7c31",
+                "reference": "0ff87e093bd2e174b177908aec985a2d7eda7c31",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Woo\\GridView\\GridViewServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Woo\\GridView\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Koronets",
+                    "email": "deniskoronets@woo.zp.ua"
+                }
+            ],
+            "description": "Yii2 gridview analog for laravel",
+            "support": {
+                "issues": "https://github.com/deniskoronets/Laravel-GridView/issues",
+                "source": "https://github.com/deniskoronets/Laravel-GridView/tree/2.2"
+            },
+            "time": "2020-04-10T21:29:02+00:00"
         }
     ],
     "packages-dev": [
