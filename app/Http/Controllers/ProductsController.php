@@ -16,10 +16,9 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $dataProvider = new EloquentDataProvider(Products::query());
-        return view('products', [
-            'dataProvider' => $dataProvider
-        ]);
+        $products = Products::get();
+  
+        return view("products", compact("products"));
     }  
   
     /**

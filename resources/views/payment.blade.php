@@ -33,7 +33,7 @@
                             </div>
                             <div class="col-xl-12 col-lg-12">
                             <hr>
-                                <button type="submit" class="btn btn-primary" id="card-button" data-secret="{{ $intent->client_secret }}">Pay</button>
+                                <button type="submit" class="btn btn-primary" id="card-button" data-secret="{{ $intent->client_secret }}">Payment</button>
                             </div>
                         </div>
   

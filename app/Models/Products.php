@@ -10,9 +10,4 @@ class Products extends Model
     use HasFactory;
     protected $fillable = ['name', 'price', 'description'];
     public $table = 'products';
-
-    // public function getRouteKeyName()
-    // {
-    //     return 'slug';
-    // }
 }
