@@ -9,6 +9,9 @@
 
 ## Setup Project
 git clone git@github.com:gmariammal/stripe-payment.git
+
 composer install
+
 npm install
+
 npm run build
